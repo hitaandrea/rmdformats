@@ -2,7 +2,7 @@
 title: ""
 date: "`r Sys.Date()`"
 output:
-  rmdformats::html_docute:
+  rmdformats::downcute:
     self_contained: true
     default_style: "light"
     downcute_theme: "default"
