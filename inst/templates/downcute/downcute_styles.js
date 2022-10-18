@@ -2,7 +2,7 @@ function set_light_style(theme) {
 
     const style = document.documentElement.style;
 
-    style.setProperty('--accent-color', '#175d96');
+    style.setProperty('--accent-color', '#a81e2e');                         // MODIFIED!
     style.setProperty('--header-text-color', 'var(--text-color)');
     style.setProperty('--code-block-background', '#011627');
     style.setProperty('--inline-code-color', 'rgb(116, 66, 16)');
