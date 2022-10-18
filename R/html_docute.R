@@ -20,7 +20,7 @@
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param default_style specify default display style, "light" or "dark"
 #' @param style_switcher if TRUE (default), display a toggle button to switch between light and dark styles
-#' @param downcute_theme document template theme
+#' @param html_docute_theme document template theme
 #' @param mathjax set to NULL to disable Mathjax insertion
 #' @param highlight syntax highlighting, forced to NULL as highlighting is done via prism.js
 #' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
@@ -31,7 +31,7 @@
 #' @export
 
 
-downcute <- function(fig_width = 8,
+html_docute <- function(fig_width = 8,
                        fig_height = 5,
                        fig_caption = TRUE,
                        lightbox = FALSE,
@@ -45,22 +45,22 @@ downcute <- function(fig_width = 8,
                        mathjax = "rmdformats",
                        highlight = NULL,
                        default_style = c("light", "dark"),
-                       downcute_theme = c("default", "chaos"),
+                       html_docute_theme = c("default", "chaos"),
                        style_switcher = TRUE,
                        ...) {
 
-    downcute_theme <- match.arg(downcute_theme)
-    if (missing(default_style) && downcute_theme == "chaos") {
+    html_docute_theme <- match.arg(html_docute_theme)
+    if (missing(default_style) && html_docute_theme == "chaos") {
       default_style <- "dark"
     } else {
       default_style <- match.arg(default_style)
     }
 
     html_template(
-        template_name = "downcute",
+        template_name = "html_docute",
         template_path = "templates/template.html",
         template_dependencies = list(
-            html_dependency_downcute(embed_fonts, downcute_theme),
+            html_dependency_html_docute(embed_fonts, html_docute_theme),
             html_dependency_prism()
         ),
         pandoc_args = pandoc_args,
@@ -78,27 +78,27 @@ downcute <- function(fig_width = 8,
         highlight = NULL,
         default_style = default_style,
         style_switcher = style_switcher,
-        downcute_theme = downcute_theme,
+        html_docute_theme = html_docute_theme,
         ...
     )
 
 }
 
 # readthedown js and css
-html_dependency_downcute <- function(embed_fonts = TRUE, theme) {
-  stylesheets <- "downcute.css"
+html_dependency_html_docute <- function(embed_fonts = TRUE, theme) {
+  stylesheets <- "html_docute.css"
   if (embed_fonts) {
-    stylesheets <- c(stylesheets, "downcute_fonts_embed.css")
+    stylesheets <- c(stylesheets, "html_docute_fonts_embed.css")
   } else {
-    stylesheets <- c(stylesheets, "downcute_fonts_download.css")
+    stylesheets <- c(stylesheets, "html_docute_fonts_download.css")
   }
   if (theme == "chaos") {
-    stylesheets <- c(stylesheets, "downcute_chaos.css")
+    stylesheets <- c(stylesheets, "html_docute_chaos.css")
   }
-  htmltools::htmlDependency(name = "downcute",
+  htmltools::htmlDependency(name = "html_docute",
                  version = "0.1",
-                 src = system.file("templates/downcute", package = "rmdformats"),
-                 script = c("downcute_styles.js", "downcute.js"),
+                 src = system.file("templates/html_docute", package = "rmdformats"),
+                 script = c("html_docute_styles.js", "html_docute.js"),
                  stylesheet = stylesheets)
 }
 
