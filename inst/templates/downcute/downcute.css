@@ -1214,6 +1214,8 @@ body .plot {
     color: black;
 }
 
+/* Customized by Andrea Hita */
+
 @import url(https://fonts.googleapis.com/css?family=Rambla);
 
 body {
@@ -1245,4 +1247,8 @@ h2 {
 
 a {
   color: #000;
+}
+
+.Wrap {
+    max-width: 1300px!important;
 }

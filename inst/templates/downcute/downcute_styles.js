@@ -7,12 +7,12 @@ function set_light_style(theme) {
     style.setProperty('--code-block-background', '#011627');
     style.setProperty('--inline-code-color', 'rgb(116, 66, 16)');
     style.setProperty('--inline-code-background', 'rgb(254, 252, 191)');
-    style.setProperty('--page-background', '#ffffff');                      // MODIFIED!
+    style.setProperty('--page-background', '#1a1a1a;');                     // MODIFIED!
     style.setProperty('--header-background', '#fff');
     style.setProperty('--text-color', '#112233');                           // MODIFIED!
     style.setProperty('--link-color', 'var(--accent-color)');
-    style.setProperty('--sidebar-width', '280px');
-    style.setProperty('--sidebar-background', 'var(--page-background)');
+    style.setProperty('--sidebar-width', '330px');                          // MODIFIED!
+    style.setProperty('--sidebar-background', '#f0f0f0');                   // MODIFIED!
     style.setProperty('--sidebar-link-color', '#444');
     style.setProperty('--sidebar-link-active-color', 'var(--accent-color)');
     style.setProperty('--sidebar-link-arrow-color', '#999');
