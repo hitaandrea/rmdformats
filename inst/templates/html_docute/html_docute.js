@@ -1,5 +1,5 @@
 
-// Apply CSS variables defined in downcute_styles.js
+// Apply CSS variables defined in html_docute_styles.js
 function toggle_style(toggler, theme) {
     if (toggler.classList.contains("checked")) {
         set_dark_style(theme);
@@ -12,8 +12,8 @@ window.addEventListener("load", (event) => {
 
     // Theme
     let theme = "default";
-    const downcute_root = document.getElementById("docute");
-    if (downcute_root !== null && downcute_root.classList.contains('theme-chaos')) {
+    const html_docute_root = document.getElementById("docute");
+    if (html_docute_root !== null && html_docute_root.classList.contains('theme-chaos')) {
         theme = "chaos";
     }
 
