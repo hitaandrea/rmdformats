@@ -507,10 +507,10 @@ a {
     margin: 15px 0
 }
 
-.page-content .table-wrapper {
+/*.page-content .table-wrapper {
     overflow-x: auto;
     margin-bottom: 3rem;
-}
+}*/
 
 .page-content table {
     width: 100%;
@@ -518,6 +518,7 @@ a {
     border-collapse: separate
 }
 
+/*.page-content table tbody tr td,
 .page-content table tbody tr td,
 .page-content table thead tr th {
     padding: 12px 10px;
@@ -544,7 +545,7 @@ a {
 .page-content table thead tr th:last-child {
     border-right: 1px solid var(--border-color);
     border-radius: 0 4px 4px 0
-}
+}*/
 
 .page-content .pre-wrapper {
     margin: 2rem 0;
@@ -1102,7 +1103,7 @@ button.code-folding-btn {
     color: var(--text-color) !important;
 } 
 
-.page-content .dataTables_wrapper input[type='search'] {
+/*.page-content .dataTables_wrapper input[type='search'] {
     border-color: var(--border-color);
     background: var(--page-background);
     color: var(--text-color);
@@ -1135,7 +1136,7 @@ button.code-folding-btn {
 .pagedtable .table th,
 .pagedtable .table td {
     padding: 5px;
-}
+}*/
 
 /* TOC and scrollspy */
 
