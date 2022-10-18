@@ -7,7 +7,7 @@ function set_light_style(theme) {
     style.setProperty('--code-block-background', '#011627');
     style.setProperty('--inline-code-color', 'rgb(116, 66, 16)');
     style.setProperty('--inline-code-background', 'rgb(254, 252, 191)');
-    style.setProperty('--page-background', '#ffffff');                      // MODIFIED!
+    style.setProperty('--page-background', '#1a1a1a');                      // MODIFIED!
     style.setProperty('--header-background', '#fff');
     style.setProperty('--text-color', '#112233');                           // MODIFIED!
     style.setProperty('--link-color', 'var(--accent-color)');
@@ -16,7 +16,7 @@ function set_light_style(theme) {
     style.setProperty('--sidebar-link-color', '#444');
     style.setProperty('--sidebar-link-active-color', 'var(--accent-color)');
     style.setProperty('--sidebar-link-arrow-color', '#999');
-    style.setProperty('--main-background', 'var(--page-background)');
+    style.setProperty('--main-background', '#ffffff');                      // MODIFIED!
     style.setProperty('--border-color', '#eaeaea');
     style.setProperty('--header-height', '0px');
     style.setProperty('--code-font', 'SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace');

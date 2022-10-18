@@ -1220,8 +1220,7 @@ body .plot {
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: #1a1a1a;
-    margin: 0;
+    text-align: justify!important;
 }
 
 /* Titles */
@@ -1239,16 +1238,21 @@ h1.title {
     margin: 0 0 50px 0;
     text-align: center;
     font-size: 2.2em;
-
 }
 h2 {
     font-size: 1.3em;
+}
+h3 {
+    font-size: 1em;
 }
 
 a {
   color: #000;
 }
 
+.Main{
+    padding-right: 4rem;
+}
 .Wrap {
     max-width: 1300px!important;
 }
