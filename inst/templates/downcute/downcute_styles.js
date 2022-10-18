@@ -7,7 +7,7 @@ function set_light_style(theme) {
     style.setProperty('--code-block-background', '#011627');
     style.setProperty('--inline-code-color', 'rgb(116, 66, 16)');
     style.setProperty('--inline-code-background', 'rgb(254, 252, 191)');
-    style.setProperty('--page-background', '#1a1a1a;');                     // MODIFIED!
+    style.setProperty('--page-background', '#ffffff');                      // MODIFIED!
     style.setProperty('--header-background', '#fff');
     style.setProperty('--text-color', '#112233');                           // MODIFIED!
     style.setProperty('--link-color', 'var(--accent-color)');
