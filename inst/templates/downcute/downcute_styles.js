@@ -11,7 +11,7 @@ function set_light_style(theme) {
     style.setProperty('--header-background', '#fff');
     style.setProperty('--text-color', '#112233');                           // MODIFIED!
     style.setProperty('--link-color', 'var(--accent-color)');
-    style.setProperty('--sidebar-width', '330px');                          // MODIFIED!
+    style.setProperty('--sidebar-width', '360px');                          // MODIFIED!
     style.setProperty('--sidebar-background', '#f0f0f0');                   // MODIFIED!
     style.setProperty('--sidebar-link-color', '#444');
     style.setProperty('--sidebar-link-active-color', 'var(--accent-color)');
