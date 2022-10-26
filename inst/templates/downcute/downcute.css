@@ -1257,3 +1257,6 @@ a {
 .Wrap {
     max-width: 1300px!important;
 }
+
+#toc > ul li.active ul li {
+  max-height: 48px; }
